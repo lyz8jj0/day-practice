@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         <title>我很简单</title>
     </head>
     <body>
      <h1>我就是喜欢简单！</h1>
     </body>
  </html>
+<script>
+    $.ajax({
+        type:"POST",
+        url:"http://127.0.0.1/demo/test.php",
+        // dataType:"json",
+        data:{
+
+            "username":"admin",
+
+            "password":"123455"
+
+        },
+        success:function(e){
+           alert(e);
+        }
+    })
+</script>
