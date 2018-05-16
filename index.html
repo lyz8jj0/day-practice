@@ -26,3 +26,20 @@
         }
     })
 </script>
+<script>
+    $.ajax({
+        type:"POST",
+        url:"http://127.0.0.1/sjk.php",
+        // dataType:"json",
+        data:{
+
+            "username":"admin",
+
+            "password":"123455"
+
+        },
+        success:function(e){
+            alert(e);
+        }
+    })
+</script>
